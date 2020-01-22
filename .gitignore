@@ -1,0 +1,50 @@
+.gradle/
+.idea/
+**/build/
+**/out/
+classes/
+gradle/
+gradlew
+gradlew.bat
+classes/
+core.iml
+!gradle/wrapper/gradle-wrapper.jar
+
+### Eclipse ###
+/bin/
+.classpath
+.project
+.settings/
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+**/.gradle
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Java ###
+*.class
+
+### Package Files ###
+*.jar
+*.war
+*.ear

@@ -1,0 +1,36 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.springframework.boot:spring-boot-gradle-plugin:$project.ext.springBootVersion"
+  }
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'maven-publish'
+
+group 'mx.innart'
+version '1.0.1'
+
+jar.enabled = true
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
+  testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
+
+publishing {
+  publications {
+    mavenJava(MavenPublication) {
+      artifactId = 'tools-sdk'
+      from components.java
+    }
+  }
+}
+
